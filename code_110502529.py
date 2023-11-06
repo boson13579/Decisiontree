@@ -256,8 +256,8 @@ def accuracy_report(X_train_scale, y_train,X_test_scale,y_test,max_depth=7):
 #%%    
 def main():
     random_state = 1
-    random_state = random.randint(0,4294967295)
-    print("random state: %d" % random_state)
+    # random_state = random.randint(0,4294967295)
+    # print("random state: %d" % random_state)
     X_train, X_test, y_train, y_test = load_train_test_data(test_ratio=.3,random_state = random_state)  
     accuracy_report(X_train, y_train,X_test,y_test,max_depth=8)
 #%%
